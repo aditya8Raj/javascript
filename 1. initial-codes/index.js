@@ -702,13 +702,24 @@
 
 // Closure
 
-function outer() {
-  let name = "Aditya";
-  function inner() {
-    console.log(name);
-  }
-  return inner;
+// function outer() {
+//   let name = "Aditya";
+//   function inner() {
+//     console.log(name);
+//   }
+//   return inner;
+// }
+
+// let inner = outer();
+// inner();
+
+// setTimeout() function
+// syntax:
+// setTImeout(callback, delay)
+
+function greet() {
+  console.log(`Hello!`);
+  console.log(`Nice to meet you.`);
 }
 
-let inner = outer();
-inner();
+setTimeout(greet, 3000); // this will execute to greet() function after 3 seconds

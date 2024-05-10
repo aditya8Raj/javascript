@@ -1191,4 +1191,22 @@ Output:
 John;
 ```
 
-### 🔴 54.
+### 🔴 54. setTimeout() function
+
+- The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds.
+
+```javascript
+function greet() {
+  console.log("Hello, World!");
+}
+
+setTimeout(greet, 3000);
+```
+
+Output:
+
+```javascript
+Hello, World!;
+```
+
+### 🔴 55.
