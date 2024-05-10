@@ -1,0 +1,49 @@
+body {
+  background-color: #eb3232;
+  font-family: monospace;
+}
+
+.main {
+  text-align: center;
+  border: 8px solid wheat;
+  border-radius: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  text-decoration: underline;
+  /* padding-top: 25px; */
+}
+
+#finalNumber {
+  display: block;
+  text-align: center;
+  font-size: 10em;
+  font-family: Helvetica;
+}
+
+#btnContainer {
+  text-align: center;
+}
+
+.buttons {
+  padding: 10px 20px;
+  font-size: 1.5em;
+  color: aqua;
+  background-color: black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  font-weight: 900;
+  margin-top: 2%;
+  border: 2px solid #e8e8e8;
+}
+
+.buttons:hover {
+  background-color: aqua;
+  color: black;
+}
