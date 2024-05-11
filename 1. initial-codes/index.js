@@ -723,3 +723,17 @@
 // }
 
 // setTimeout(greet, 3000); // this will execute to greet() function after 3 seconds
+
+// Synchronous
+// javascript is synchronous programming language, this means it will execute the code line by line
+
+// console.log(`Hello World`); // this executes first
+// console.log(`Hello Universe`); // this executes after the first line
+
+// Asynchronous
+// javascript is single threaded , this means it can execute only one task at a time.
+
+console.log(`Hello World!`);
+setTimeout(() => {
+  console.log(`Hello Universe!`);
+}, 3000);
