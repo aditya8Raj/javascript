@@ -717,9 +717,9 @@
 // syntax:
 // setTImeout(callback, delay)
 
-function greet() {
-  console.log(`Hello!`);
-  console.log(`Nice to meet you.`);
-}
+// function greet() {
+//   console.log(`Hello!`);
+//   console.log(`Nice to meet you.`);
+// }
 
-setTimeout(greet, 3000); // this will execute to greet() function after 3 seconds
+// setTimeout(greet, 3000); // this will execute to greet() function after 3 seconds

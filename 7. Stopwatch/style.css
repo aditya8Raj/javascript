@@ -1,0 +1,78 @@
+body {
+  background-color: black;
+  font-family: monospace;
+  color: white;
+  margin: 10px;
+  padding: 0;
+}
+
+.main {
+  text-align: center;
+  border: 2px solid #eb3232;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  margin: auto;
+  box-shadow: 3px 4px 30px hsla(0, 89%, 48%, 0.88);
+  background-color: rgba(128, 128, 128, 0.493);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  text-decoration: underline;
+  padding-top: 15px;
+}
+
+#counter {
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  font-size: 3.4em;
+  font-family: monospace;
+  padding: 15px 0;
+}
+
+#btnContainer {
+  text-align: center;
+}
+
+.buttons {
+  padding: 10px 15px;
+  width: 50%;
+  max-width: 170px;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  font-weight: 900;
+  margin: 20px auto;
+  border: none;
+}
+
+#startBtn {
+  background-color: green;
+}
+
+#stopBtn {
+  background-color: red;
+}
+
+#resetBtn {
+  background-color: rgb(26, 166, 212);
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    width: 90%;
+  }
+
+  .buttons {
+    width: 80%;
+    max-width: none;
+  }
+}
