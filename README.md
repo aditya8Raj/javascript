@@ -1345,4 +1345,17 @@ Task 3;
 Task 4;
 ```
 
-### 🔴 61.
+### 🔴 61. Promises
+
+- A promise is an object that may produce a single value some time in the future.
+- A promise is a placeholder for a value that may not be available yet.
+
+```javascript
+let promise = new Promise((resolve, reject) => {
+  let x = 5;
+  let y = 0;
+  if (y == 0) reject("Division by zero");
+  let z = x / y;
+  resolve(z);
+});
+```

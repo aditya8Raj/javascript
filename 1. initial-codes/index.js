@@ -775,18 +775,28 @@
 
 // Callback Hell
 
-setTimeout(() => {
-  console.log("Task 1");
-  setTimeout(() => {
-    console.log("Task 2");
-    setTimeout(() => {
-      console.log("Task 3");
-      setTimeout(() => {
-        console.log("Task 4");
-        setTimeout(() => {
-          console.log("Task 5");
-        }, 1000);
-      }, 1000);
-    }, 1000);
-  }, 1000);
-}, 1000);
+// setTimeout(() => {
+//   console.log("Task 1");
+//   setTimeout(() => {
+//     console.log("Task 2");
+//     setTimeout(() => {
+//       console.log("Task 3");
+//       setTimeout(() => {
+//         console.log("Task 4");
+//         setTimeout(() => {
+//           console.log("Task 5");
+//         }, 1000);
+//       }, 1000);
+//     }, 1000);
+//   }, 1000);
+// }, 1000);
+
+// Promises
+
+let promise = new Promise((resolve, reject) => {
+  let x = 5;
+  let y = 0;
+  if (y == 0) reject("Division by zero");
+  let z = x / y;
+  resolve(z);
+});
