@@ -1283,4 +1283,38 @@ Finally block;
   - Security errors
   - etc.
 
-### 🔴 58.
+### 🔴 58. DOM = Document Object Model
+
+- The Document Object Model (DOM) is a programming interface for web documents.
+- It represents the structure of a document as a tree of nodes.
+- The DOM is used to interact with HTML elements using JavaScript.
+
+```javascript
+document.getElementById("heading").innerHTML = "Hello, World!";
+```
+
+Output:
+
+```javascript
+Hello, World!;
+```
+
+### 🔴 59. Event Listenes
+
+- Listens for specific events to create interactive web pages.
+- events: click, mouseover, mouseout, keydown, keyup, etc.
+- An event listener is a procedure or function in a computer program that waits for an event to occur.
+
+```javascript
+document.getElementById("button").addEventListener("click", function () {
+  alert("Hello, World!");
+});
+```
+
+Output:
+
+```javascript
+Alert: Hello, World!;
+```
+
+### 🔴 60.

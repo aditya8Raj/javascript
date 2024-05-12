@@ -762,3 +762,13 @@
 // } finally {
 //   console.log("Finally block.");
 // }
+
+// Event listeners
+
+document.getElementById("btn-light").addEventListener("click", function () {
+  document.body.style.backgroundColor = "lightgray";
+});
+
+document.getElementById("btn-dark").addEventListener("click", function () {
+  document.body.style.backgroundColor = "black";
+});
