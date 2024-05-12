@@ -751,14 +751,14 @@
 //   console.log(z);
 // }
 
-try {
-  let x = 5;
-  let y = 10;
-  if (y == 0) throw "Division by zero.";
-  let z = x / y;
-  console.log(z);
-} catch (error) {
-  console.log(error);
-} finally {
-  console.log("Finally block.");
-}
+// try {
+//   let x = 5;
+//   let y = 10;
+//   if (y == 0) throw "Division by zero.";
+//   let z = x / y;
+//   console.log(z);
+// } catch (error) {
+//   console.log(error);
+// } finally {
+//   console.log("Finally block.");
+// }
