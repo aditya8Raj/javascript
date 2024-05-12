@@ -765,10 +765,28 @@
 
 // Event listeners
 
-document.getElementById("btn-light").addEventListener("click", function () {
-  document.body.style.backgroundColor = "lightgray";
-});
+// document.getElementById("btn-light").addEventListener("click", function () {
+//   document.body.style.backgroundColor = "lightgray";
+// });
 
-document.getElementById("btn-dark").addEventListener("click", function () {
-  document.body.style.backgroundColor = "black";
-});
+// document.getElementById("btn-dark").addEventListener("click", function () {
+//   document.body.style.backgroundColor = "black";
+// });
+
+// Callback Hell
+
+setTimeout(() => {
+  console.log("Task 1");
+  setTimeout(() => {
+    console.log("Task 2");
+    setTimeout(() => {
+      console.log("Task 3");
+      setTimeout(() => {
+        console.log("Task 4");
+        setTimeout(() => {
+          console.log("Task 5");
+        }, 1000);
+      }, 1000);
+    }, 1000);
+  }, 1000);
+}, 1000);

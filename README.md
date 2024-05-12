@@ -1317,4 +1317,32 @@ Output:
 Alert: Hello, World!;
 ```
 
-### 🔴 60.
+### 🔴 60. Callback Hell
+
+- Callback hell is a phenomenon that happens when you have too many nested callbacks.
+
+```javascript
+setTimeout(() => {
+  console.log("Task 1");
+  setTimeout(() => {
+    console.log("Task 2");
+    setTimeout(() => {
+      console.log("Task 3");
+      setTimeout(() => {
+        console.log("Task 4");
+      }, 1000);
+    }, 1000);
+  }, 1000);
+}, 1000);
+```
+
+Output:
+
+```javascript
+Task 1;
+Task 2;
+Task 3;
+Task 4;
+```
+
+### 🔴 61.
