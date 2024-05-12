@@ -1246,4 +1246,41 @@ Hello, World!;
 Hello, Universe!;
 ```
 
-### 🔴 57.
+### 🔴 57. Error object and Error Handeling
+
+- JavaScript has a built-in error object that provides error information when an error occurs.
+- The try statement allows you to define a block of code to be tested for errors while it is being executed.
+- The catch statement allows you to define a block of code to be executed if an error occurs in the try block.
+- The finally statement lets you execute code, after try and catch, regardless of the result.
+
+```javascript
+try {
+  let x = 5;
+  let y = 0;
+  if (y == 0) throw "Division by zero";
+  let z = x / y;
+  console.log(z);
+} catch (error) {
+  console.log(error);
+} finally {
+  console.log("Finally block");
+}
+```
+
+Output:
+
+```javascript
+Division by zero;
+Finally block;
+```
+
+- Errors can occur in the following scenarios:
+  - Syntax errors
+  - Logical errors
+  - Runtime errors
+  - Network errors
+  - Promise errors
+  - Security errors
+  - etc.
+
+### 🔴 58.

@@ -733,7 +733,32 @@
 // Asynchronous
 // javascript is single threaded , this means it can execute only one task at a time.
 
-console.log(`Hello World!`);
-setTimeout(() => {
-  console.log(`Hello Universe!`);
-}, 3000);
+// console.log(`Hello World!`);
+// setTimeout(() => {
+//   console.log(`Hello Universe!`);
+// }, 3000);
+
+// error object and error handeling
+// - The try statement allows you to define a block of code to be tested for errors while it is being executed.
+// - The catch statement allows you to define a block of code to be executed if an error occurs in the try block.
+// - The finally statement lets you execute code, after try and catch, regardless of the result.
+
+// let x = 5;
+// let y = 0;
+
+// if (y == 0) {
+//   let z = x / y;
+//   console.log(z);
+// }
+
+try {
+  let x = 5;
+  let y = 10;
+  if (y == 0) throw "Division by zero.";
+  let z = x / y;
+  console.log(z);
+} catch (error) {
+  console.log(error);
+} finally {
+  console.log("Finally block.");
+}
