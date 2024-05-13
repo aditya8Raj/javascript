@@ -1447,4 +1447,35 @@ Output:
 { name: "John", age: 25, isMarried: false };
 ```
 
-### 🔴 64.
+### 🔴 64. fetch
+
+- The fetch() method is used to make network requests similar to XMLHttpRequest.
+- The fetch() method returns a Promise that resolves to the Response to that request, whether it is successful or not.
+
+```javascript
+fetch("https://jsonplaceholder.typicode.com/posts")
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+```
+
+Output:
+
+```javascript
+[
+  {
+    userId: 1,
+    id: 1,
+    title: "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    body: "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+  },
+  {
+    userId: 1,
+    id: 2,
+    title: "qui est esse",
+    body: "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
+  },
+  ...
+];
+```
+
+### 🔴 65.

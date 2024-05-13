@@ -840,14 +840,21 @@ document.getElementById("btn-dark").addEventListener("click", function () {
 // JavaScript Object Notation
 // easy for humans to read and write, easy for machines to parse and generate
 
-let person = {
-  name: "Aditya",
-  age: 19,
-  isMarried: false,
-};
+// let person = {
+//   name: "Aditya",
+//   age: 19,
+//   isMarried: false,
+// };
 
-let json = JSON.stringify(person);
-console.log(json);
+// let json = JSON.stringify(person);
+// console.log(json);
 
-let object = JSON.parse(json);
-console.log(object);
+// let object = JSON.parse(json);
+// console.log(object);
+
+// JSON
+
+fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
+  .then((response) => response.json())
+  .then((data) => console.log(data.name))
+  .catch((error) => console.log(error));
