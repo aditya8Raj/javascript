@@ -822,16 +822,32 @@ document.getElementById("btn-dark").addEventListener("click", function () {
 
 // main();
 
-async function greet() {
-  setTimeout(() => {
-    return "Hello World!";
-  }, 2000);
-}
+// async function greet() {
+//   setTimeout(() => {
+//     return "Hello World!";
+//   }, 2000);
+// }
 
-async function main() {
-  let message = await greet();
-  console.log("My man");
-  console.log(message);
-}
+// async function main() {
+//   let message = await greet();
+//   console.log("My man");
+//   console.log(message);
+// }
 
-main();
+// main();
+
+// JSON
+// JavaScript Object Notation
+// easy for humans to read and write, easy for machines to parse and generate
+
+let person = {
+  name: "Aditya",
+  age: 19,
+  isMarried: false,
+};
+
+let json = JSON.stringify(person);
+console.log(json);
+
+let object = JSON.parse(json);
+console.log(object);

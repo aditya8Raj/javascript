@@ -1419,4 +1419,32 @@ Output:
 Hello, World!;
 ```
 
-### 🔴 63.
+### 🔴 63. JSON
+
+- JSON (JavaScript Object Notation) is a lightweight data-interchange format.
+- JSON files are generally objects {key:value} or arrays [value1, value2, value3] or a combination of both.
+- It is easy for humans to read and write.
+- It is easy for machines to parse and generate.
+
+```javascript
+let person = {
+  name: "John",
+  age: 25,
+  isMarried: false,
+};
+
+let json = JSON.stringify(person);
+console.log(json);
+
+let object = JSON.parse(json);
+console.log(object);
+```
+
+Output:
+
+```javascript
+{"name":"John","age":25,"isMarried":false};
+{ name: "John", age: 25, isMarried: false };
+```
+
+### 🔴 64.
