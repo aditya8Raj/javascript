@@ -765,13 +765,13 @@
 
 // Event listeners
 
-// document.getElementById("btn-light").addEventListener("click", function () {
-//   document.body.style.backgroundColor = "lightgray";
-// });
+document.getElementById("btn-light").addEventListener("click", function () {
+  document.body.style.backgroundColor = "lightgray";
+});
 
-// document.getElementById("btn-dark").addEventListener("click", function () {
-//   document.body.style.backgroundColor = "black";
-// });
+document.getElementById("btn-dark").addEventListener("click", function () {
+  document.body.style.backgroundColor = "black";
+});
 
 // Callback Hell
 
@@ -793,10 +793,45 @@
 
 // Promises
 
-let promise = new Promise((resolve, reject) => {
-  let x = 5;
-  let y = 0;
-  if (y == 0) reject("Division by zero");
-  let z = x / y;
-  resolve(z);
-});
+// let promise = new Promise((resolve, reject) => {
+//   let x = 5;
+//   let y = 0;
+//   if (y == 0) reject("Division by zero");
+//   let z = x / y;
+//   resolve(z);
+// });
+
+// Async/Await
+
+// async function divide() {
+//   let x = 5;
+//   let y = 0;
+//   if (y == 0) throw "Division by zero";
+//   let z = x / y;
+//   return z;
+// }
+
+// async function main() {
+//   try {
+//     let result = await divide();
+//     console.log(result);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
+// main();
+
+async function greet() {
+  setTimeout(() => {
+    return "Hello World!";
+  }, 2000);
+}
+
+async function main() {
+  let message = await greet();
+  console.log("My man");
+  console.log(message);
+}
+
+main();

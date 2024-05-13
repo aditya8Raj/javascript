@@ -1359,3 +1359,64 @@ let promise = new Promise((resolve, reject) => {
   resolve(z);
 });
 ```
+
+Output:
+
+```javascript
+Division by zero;
+```
+
+### 🔴 62. Async/Await
+
+- The async function declaration defines an asynchronous function, which returns an AsyncFunction object.
+- The await expression causes async function execution to pause until a Promise is settled (that is, fulfilled or rejected), and to resume execution of the async function after fulfillment.
+
+```javascript
+async function divide() {
+  let x = 5;
+  let y = 0;
+  if (y == 0) throw "Division by zero";
+  let z = x / y;
+  return z;
+}
+
+async function main() {
+  try {
+    let result = await divide();
+    console.log(result);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+main();
+```
+
+Output:
+
+```javascript
+Division by zero;
+```
+
+- Example 2:
+
+```javascript
+async function greet() {
+  return "Hello, World!";
+}
+
+async function main() {
+  let message = await greet();
+  console.log(message);
+}
+
+main();
+```
+
+Output:
+
+```javascript
+Hello, World!;
+```
+
+### 🔴 63.
