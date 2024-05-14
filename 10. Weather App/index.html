@@ -9,16 +9,14 @@
   <body>
     <div class="main">
       <h1>☀️ Weather App 🌙</h1>
-      <input type="text" placeholder="Enter City Name" />
-      <br />
-      <button>Get Weather</button>
-      <div id="weatherDetails">
-        <h2 id="city">City Name</h2>
-        <h2>Temp°C</h2>
-        <h4>Weather Condition %</h4>
-        <h3>Sky Condition</h3>
-        <h1 id="emojie">☀️</h1>
-      </div>
+
+      <form class="weatherForm">
+        <input type="text" placeholder="Enter City Name" class="cityInput" />
+        <br />
+        <button>Get Weather</button>
+      </form>
+
+      <div class="card" style="display: none"></div>
     </div>
     <script src="script.js"></script>
   </body>

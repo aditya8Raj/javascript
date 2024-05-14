@@ -39,6 +39,7 @@ button {
   background-color: rgb(70, 201, 70);
   color: rgb(255, 255, 255);
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 button:hover {
@@ -57,6 +58,21 @@ h3 {
   font-size: 20px;
 }
 
-#emojie {
+h5 {
   font-size: 5rem;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+.errorDisplay {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.card {
+  justify-content: center;
 }
